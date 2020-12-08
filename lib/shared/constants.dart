@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:velocity_x/velocity_x.dart';
 
 import 'size_config.dart';
 
@@ -20,7 +21,10 @@ const kBodyTextColorLight = Color(0xFFA1B0CA);
 const kBodyTextColorDark = Color(0xFF7C7C7C);
 const kTitleTextLightColor = Color(0xFF101112);
 const kTitleTextDarkColor = Colors.white;
-
+//AI Colors
+const Color kAiPrimaryColor = Vx.orange400;
+const Color kAiSecondaryColor = Vx.purple500;
+//Shadow color
 const kShadowColor = Color(0xFF364564);
 
 const Duration kAnimationDuration = Duration(milliseconds: 200);
@@ -36,14 +40,10 @@ const kPrimaryGradientColor = LinearGradient(
 //FORM ERRORs
 final RegExp emailValidatorRegExp =
     RegExp(r"^[a-zA-Z0-9.-_]+@[a-zA-Z0-9]+\.[a-zA-Z]+");
-const String kEmailNullError = "Please Enter your email";
 const String kInvalidEmailError = "Please Enter Valid email";
 const String kPassNullError = "Please Enter your password";
 const String kShortPassError = "Password too short";
 const String kMatchPassError = "Passwords do not match";
-const String kNameNullError = "Please Enter your full name";
-const String kInvalidNameError = "Please Enter Valid name";
-const String kShortNameError = "Name too short";
 
 //INPUTS
 final TextStyle kHeadingStyle = TextStyle(

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:radio_ai/providers/my_theme_provider.dart';
+import 'package:radio_ai/screens/home/home_screen.dart';
 import 'package:radio_ai/shared/theme.dart';
 
 void main() {
@@ -20,9 +21,7 @@ class MyApp extends StatelessWidget {
           theme: themeData(context),
           darkTheme: darkThemeData(context),
           themeMode: theme.isLightTheme ? ThemeMode.light : ThemeMode.dark,
-          home: Scaffold(
-            body: Text('hello world'),
-          ),
+          home: HomeScreen(),
         ),
       ),
     );
